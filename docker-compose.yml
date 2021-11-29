@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ttt_discord: 
+    image: tttdiscord:latest
+    user: node
+    working_dir: /home/node/discord_gmod_bot
+    volumes:
+      - ./config/.env:/home/node/discord_gmod_bot/.env
+    ports:
+      - 81:443
+      - 37405:37405
