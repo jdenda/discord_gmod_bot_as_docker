@@ -26,5 +26,4 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag ghcr.io/jdenda/discord_gmod_bot:latest
-        docker run ghcr.io/jdenda/discord_gmod_bot:latest
         docker push ghcr.io/jdenda/discord_gmod_bot:latest
