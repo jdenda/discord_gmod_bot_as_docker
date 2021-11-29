@@ -1,7 +1,7 @@
 version: '3'
 services:
   ttt_discord: 
-    image: tttdiscord:latest
+    image: ghcr.io/jdenda/discord_gmod_bot:latest
     user: node
     volumes:
       - ./config/.env:/home/node/discord_gmod_bot/.env
